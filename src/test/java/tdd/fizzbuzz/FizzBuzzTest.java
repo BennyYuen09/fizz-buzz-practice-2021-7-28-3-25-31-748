@@ -32,4 +32,18 @@ public class FizzBuzzTest {
         //then
         assertEquals(expected, actual);
     }
+
+    @Test
+    void should_return_buzz_when_count_off_given_multiple_number_of_5() {
+        //given
+        int order = 5;
+        FizzBuzz fizzBuzz = new FizzBuzz();
+        String expected = "Buzz";
+
+        //when
+        String actual = fizzBuzz.countOff(order);
+
+        //then
+        assertEquals(expected, actual);
+    }
 }
