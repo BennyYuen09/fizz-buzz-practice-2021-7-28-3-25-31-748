@@ -66,7 +66,7 @@ public class FizzBuzzTest {
         //given
         int order = 105;
         FizzBuzz fizzBuzz = new FizzBuzz();
-        String expected = "BuzzFizzWhizz";
+        String expected = "FizzBuzzWhizz";
 
         //when
         String actual = fizzBuzz.countOff(order);
