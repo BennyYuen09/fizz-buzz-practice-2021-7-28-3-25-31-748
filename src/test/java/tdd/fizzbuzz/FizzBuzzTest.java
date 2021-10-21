@@ -48,11 +48,25 @@ public class FizzBuzzTest {
     }
 
     @Test
-    void should_return_buzz_when_count_off_given_multiple_number_of_7() {
+    void should_return_whizz_when_count_off_given_multiple_number_of_7() {
         //given
         int order = 7;
         FizzBuzz fizzBuzz = new FizzBuzz();
         String expected = "Whizz";
+
+        //when
+        String actual = fizzBuzz.countOff(order);
+
+        //then
+        assertEquals(expected, actual);
+    }
+
+    @Test
+    void should_return_multiple_case_string_when_count_off_given_multiple_number_of_3_5_7(){
+        //given
+        int order = 105;
+        FizzBuzz fizzBuzz = new FizzBuzz();
+        String expected = "BuzzFizzWhizz";
 
         //when
         String actual = fizzBuzz.countOff(order);
