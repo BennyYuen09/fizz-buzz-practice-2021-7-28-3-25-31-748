@@ -14,9 +14,6 @@ public class FizzBuzz{
             output.append("Whizz");
         }
 
-        if (output.length() == 0){
-            return String.valueOf(order);
-        }
-        return output.toString();
+        return (output.length() == 0) ? String.valueOf(order) : output.toString();
     }
 }
